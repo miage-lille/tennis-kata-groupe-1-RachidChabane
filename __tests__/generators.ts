@@ -21,8 +21,8 @@ export const getPoints = (): fc.Arbitrary<Points> =>
   fc.record({
     kind: fc.constant('POINTS'),
     pointsData: fc.record({
-      PLAYER_ONE: getPoint(),
-      PLAYER_TWO: getPoint(),
+      playerOne: getPoint(),
+      playerTwo: getPoint(),
     }),
   });
 export const getFortyData = (): fc.Arbitrary<FortyData> =>
